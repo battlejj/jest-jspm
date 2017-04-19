@@ -1,5 +1,5 @@
 {
-  "name": "jest-jspm",
+  "name": "jest-jspm-es5",
   "version": "0.1.2",
   "description": "converts jspm aliasing config into jest mapping config",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yoavniran/jest-jspm.git"
+    "url": "git+https://github.com/battlejj/jest-jspm-es5.git"
   },
   "keywords": [
     "jest",
@@ -21,21 +21,27 @@
     "test"
   ],
   "author": "Yoav Niran",
+  "contributors": [
+    {
+      "name": "Jeremy Battle",
+      "email": "battlejj@gmail.com"
+    }
+  ],
   "license": "WTFPL",
   "bugs": {
-    "url": "https://github.com/yoavniran/jest-jspm/issues"
+    "url": "https://github.com/battlejj/jest-jspm-es5/issues"
   },
-  "homepage": "https://github.com/yoavniran/jest-jspm#readme",
+  "homepage": "https://github.com/battlejj/jest-jspm-es5#readme",
   "devDependencies": {
     "babel-jest": "^19.0.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0",
-    "babel-preset-es2016": "^6.22.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-2": "^6.22.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "gulp-coveralls": "^0.1.4",
     "gulp-eslint": "^3.0.1",
     "gulp-jest": "^1.0.0",
     "jest-cli": "^19.0.2"

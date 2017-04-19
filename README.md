@@ -1,21 +1,23 @@
-[![Coverage Status](https://coveralls.io/repos/github/yoavniran/jest-jspm/badge.svg?branch=master)](https://coveralls.io/github/yoavniran/jest-jspm?branch=master)
-[![npm Version](https://img.shields.io/npm/v/jest-jspm.svg)](https://www.npmjs.com/package/jest-jspm) 
-[![CircleCI](https://circleci.com/gh/yoavniran/jest-jspm.svg?style=svg)](https://circleci.com/gh/yoavniran/jest-jspm)
+# jest-jspm-es5
 
-# jest-jspm
+### CREDIT
+
+This library is a backport of (https://github.com/yoavniran/jest-jspm) because I needed it on older versions of NodeJS
+that didn't support some of the newer ES6 syntax that was being used. If you don't run an older version of Node it
+probably makes more sense to use that version of the library.
 
 A Helper to generate [Jest](https://facebook.github.io/jest/) configuration for a JSPM/SystemJS based application.
  Since System JS applies its own logic for how to resolve dependencies Jest cannot locate them while running.
  This library helps you test your app with Jest by generating the correct mappings configuration Jest understands.
  
- > Gulp users see: [gulp-jest-jspm](https://www.npmjs.com/package/gulp-jest-jspm)
+ > Gulp users see: [gulp-jest-jspm-es5](https://www.npmjs.com/package/gulp-jest-jspm-es5)
  
 ## Usage
 
 Install: 
 
  ```bash
- $ npm install --save-dev jest-jspm
+ $ npm install --save-dev jest-jspm-es5
  ```
 
 
@@ -23,7 +25,7 @@ In your code:
 
 ```javascript
 
-import makeJestConfig from "jest-jspm";
+import makeJestConfig from "jest-jspm-es5";
 
 const jestConfig = makeJestConfig({
 	//...options

@@ -35,12 +35,6 @@ describe("utils tests", () => {
         expect(utils.isFunction(() => ({}))).toBeTruthy();
     });
 
-    it("isFunction() should return true for generator function", () => {
-        expect(utils.isFunction(function* test() {
-            yield 1;
-        })).toBeTruthy();
-    });
-
     it("isFunction() should return false for undefined", () => {
         expect(utils.isFunction(undefined)).toBeFalsy();
     });
